@@ -1,8 +1,8 @@
 #!/bin/bash
 
-
+echo"******************************************************************************"
 echo                      "RESTRICTED ACCESS AREA"                       
-
+echo"******************************************************************************"
 echo "WARNING: This is a secure system. Unauthorized access is prohibited." 
 
 echo "This system is for authorized personnel only. Unauthorized access"
@@ -13,10 +13,11 @@ echo "Security Reminder:"
 echo "- Ensure your login credentials are kept confidential."
 echo "- Report any suspicious activity immediately."
 echo "- Access to this system implies consent to monitoring."
-echo
+
 echo "Unauthorized access is a violation of company policy and may result"
 echo "in disciplinary action, civil liability, and criminal prosecution."
 
 echo  "WARNING: This is a secure system. Unauthorized access is prohibited." 
-
+echo"*****************************************************************************"
 echo                      "RESTRICTED ACCESS AREA"
+echo"*****************************************************************************"
