@@ -10,7 +10,7 @@ fi
 yum update -y
 
 # Set strong passwords for all users (excluding root)
-awk -F: '$3 >= 1000 && $1 != "root" {print $1}' /etc/passwd | xargs -I {} chpasswd <<< "{}:$(openssl rand -base64 12)"
+awk -F: '$3 >= 1000 && $1 != "root" {print $1}' /etc/passwd | xargs -I {} chpasswd <<< "{}:$(openssl rand -base64 18)"
 
 # Disable root login via SSH
 sed -i 's/^PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
