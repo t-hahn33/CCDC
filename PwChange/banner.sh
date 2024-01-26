@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "******************************************************************************"
-echo                      "RESTRICTED ACCESS AREA"                       
+echo                       "RESTRICTED ACCESS AREA"                       
 echo "******************************************************************************"
 echo  "WARNING: This is a secure system. Unauthorized access is prohibited." 
 
@@ -19,5 +19,5 @@ echo  "in disciplinary action, civil liability, and criminal prosecution."
 
 echo  "WARNING: This is a secure system. Unauthorized access is prohibited." 
 echo "*****************************************************************************"
-echo                      "RESTRICTED ACCESS AREA"
+echo                            "NOT TODAY SATAN!"
 echo "*****************************************************************************"
