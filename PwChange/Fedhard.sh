@@ -6,8 +6,6 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-# Update the system
-yum update -y
 
 # Set strong passwords for all users (excluding root)
 awk -F: '$3 >= 1000 && $1 != "root" {print $1}' /etc/passwd | xargs -I {} chpasswd <<< "{}:$(openssl rand -base64 18)"
