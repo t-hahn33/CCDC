@@ -20,7 +20,9 @@ done
 mysql_users=$(mysql -Bse "SELECT User FROM mysql.user WHERE User != 'root';")
 for mysql_user in $mysql_users; do
   echo "Changing MySQL password for user: $mysql_user"
-  mysqladmin -u $mysql_user password "$new_password"
+  read -sp "Enter the MySQL password for $mysql_user: " mysql_password
+  echo
+  mysql -u $mysql_user -p"$mysql_password" -e "SET PASSWORD FOR '$mysql_user'@'localhost' = PASSWORD('$new_password');"
 done
 
 echo "Password change script completed."
